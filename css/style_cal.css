@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.tcalInput {
+    background: url("../images/cal.gif") no-repeat scroll 100% 50% transparent;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.tcalActive {
+    background-image: url("../images/no_cal.gif");
+}
+#tcal {
+    background-color: white;
+    border: 1px solid silver;
+    box-shadow: 3px 3px 4px silver;
+    margin-top: 2px;
+    padding: 0 2px 2px;
+    position: absolute;
+    visibility: hidden;
+    width: 170px;
+    z-index: 100;
+}
+#tcalControls {
+    border: 0 none;
+    border-collapse: collapse;
+    width: 100%;
+}
+#tcalControls td {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 0 none;
+    border-collapse: collapse;
+    cursor: pointer;
+    padding: 0;
+    width: 16px;
+}
+#tcalControls th {
+    border: 0 none;
+    border-collapse: collapse;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+#tcalPrevYear {
+    background-image: url("../images/prev_year.gif");
+}
+#tcalPrevMonth {
+    background-image: url("../images/prev_mon.gif");
+}
+#tcalNextMonth {
+    background-image: url("../images/next_mon.gif");
+}
+#tcalNextYear {
+    background-image: url("../images/next_year.gif");
+}
+#tcalGrid {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    width: 100%;
+}
+#tcalGrid th {
+    background-color: gray;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    color: white;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 10px;
+    padding: 3px 0;
+    text-align: center;
+}
+#tcalGrid td {
+    border: 0 none;
+    border-collapse: collapse;
+    cursor: pointer;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 11px;
+    padding: 2px 0;
+    text-align: center;
+    width: 14%;
+}
+#tcalGrid td.tcalOtherMonth {
+    color: silver;
+}
+#tcalGrid td.tcalWeekend {
+    background-color: #ACD6F5;
+}
+#tcalGrid td.tcalToday {
+    border: 1px solid red;
+}
+#tcalGrid td.tcalSelected {
+    background-color: #FFB3BE;
+}

@@ -1,0 +1,9 @@
+#search, .offer .title, .offer .text, .button1, .button, .img_wrap, 
+.testimonial blockquote, .team, .solution, .offer{behavior:url(js/PIE.htc);position:relative;}
+nav, .button em, .button1 em{behavior:url(js/PIE.htc);}
+
+.button em, .button1 em{display:none;}
+.button:hover{background:#484848;}
+.button1:hover{background: url('../images/button1_h.jpg') repeat-x #8c8c8c;}
+
+.first{margin-left:0;}
